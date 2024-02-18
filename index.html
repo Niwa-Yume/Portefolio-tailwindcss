@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <!config tailwindcss>
+        <link href="tailwind.config.js" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Projet 2 TailwindCSS</title>
+</head>
+
+<body class="background--custom font-Arial">
+    <!-- canva animation de fond -->
+    <div>
+        <canvas id="canvas" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
+    <script>
+        var gradient = new Gradient();
+        gradient.initGradient("#canvas");
+    </script>
+
+
+    <!-- Header -->
+    <header class="text-gray-600 body-font">
+        <!-- Navigation -->
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <nav class="flex lg:w-2/5 flex-wrap items-center text-white md:ml-auto">
+                <a class="mr-5 hover:text-gray-900">First Link</a>
+                <a class="mr-5 hover:text-gray-900">Second Link</a>
+                <a class="mr-5 hover:text-gray-900">Third Link</a>
+            </nav>
+            <!-- Logo -->
+            <a
+                class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+                <img src="images/animoji.jpeg" alt="" class="rounded-full " width="80" height="80">
+                <span class="ml-3 text-xl">Portefolio</span>
+            </a>
+            <!-- Bouton -->
+            <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+                <button
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="text-white body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col md:flex-row">
+            <div class="flex flex-col items-center text-center md:items-start md:text-left mb-5 md:mb-0 md:flex-grow">
+                <!-- Conteneur Flex pour le texte et l'emoji -->
+                <div class="flex items-center justify-center text-center">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-white">Salut, je suis Julien !</h1>
+                    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Folded%20Hands%20Light%20Skin%20Tone.png"
+                        alt="Folded Hands Light Skin Tone" class="ml-4" width="70" height="70" />
+                </div>
+                <p class="mb-8 leading-relaxed">Je suis un développeur passionné par le monde de la tech, les webtoon et
+                    manga,<br> la blockchain, la FinTech ainsi que les arts martiaux.</p>
+                <!-- Centrage des boutons LinkedIn et GitHub -->
+                <div class="flex justify-center gap-32 items-center mx-24 mt-9">
+                    <!-- Bouton LinkedIn -->
+                    <a href="https://www.linkedin.com/in/julien-castro/"
+                        class="group hover:bg-sky-600 relative bg-sky-700 rounded text-neutral-50 duration-500 font-bold flex justify-start gap-2 items-center p-2 pr-6">
+                        <!-- SVG LinkedIn ici -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5zm13.5 11.5h-3v-5.5c0-3.038-3.462-2.813-3.462 0v5.5h-3v-10h3v1.385c1.396-2.586 7-2.777 7 2.481v6.134z" />
+                        </svg>
+                        <span class="border-l-2 px-1">LinkedIn</span>
+                    </a>
+                    <!-- Bouton GitHub -->
+                    <a href="https://github.com/Niwa-Yume" class="group relative">
+                        <!-- SVG GitHub ici -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-github">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                        <span
+                            class="absolute -top-14 left-[20%] -translate-x-[20%] z-20 origin-left scale-0 px-3 rounded-lg border border-gray-300 py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded-full" alt="hero" src="images/Julien CASTRO.jpg">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- They trusted us section -->
+    <section class="text-white body-font">
+        <!-- Titre de la section-->
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-10">
+                <h1 class="sm:text-3xl text-2xl title-font font-bold mb-4 text-white">Ils m'ont fait confiance</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Découvrez les marques et entreprises qui m'ont
+                    choisi</p>
+            </div>
+            <!-- Logo des entreprises -->
+            <!-- Logo du Baroque club-->
+            <div class="flex flex-wrap -m-4 text-center">
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full flex-col">
+                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                        <img src="images/bc_logo_b_noir_tourne.gif" alt="" class="items-center mb-5 flex ml-28"
+                            width="60" height="60">
+                        <h2 class="title-font font-medium text-3xl text-white">Le baroque club</h2>
+                    </div>
+                </div>
+                <!-- Logo de l'entreprise Infomaniak -->
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                        <img src="images/logo_infomaniak_bleu.svg" class="mb-5 mt-4" alt="">
+                        <h2 class="title-font font-medium text-3xl text-white ">Infomaniak</h2>
+                    </div>
+                </div>
+
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                        <img src="images/logo-club-berger-belge.png" class="mb-5 ml-28 " width="70" height="70">
+                        <h2 class="title-font font-medium text-2xl text-white">Club des bergers belges</h2>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                        <img src="images/logo-flowbank.svg" alt="" class="mb-5 mt-5 ml-16">
+                        <h2 class="title-font font-medium text-3xl text-white">FlowBank</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- scroll section -->
+    <section>
+        <div class="main__action">
+            <a class="main__scroll flex justify-center items-center" href="#section-portefolio">
+                <div class="main__scroll-box">
+                    <svg width="100" height="100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9997 13.1716L7.04996 8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z" fill="rgba(28,28,30,1)">
+                        </path>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- Portfolio section in bentobox design with tailwind css in 4 section 1 about dev web, 1 about bot, 1 about script and automatisation, 1 personal projet-->
+    <section id="section-portefolio" class="text-white body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-10">
+                <h1 class="sm:text-3xl text-2xl title-font font-bold mb-4 text-white">Portefolio</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Découvrez mes projets et réalisations, ainsi que comment je vais gérer un projet</p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                        
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3 underline">Projet Développement Web</h1>
+                        <p class="leading-relaxed mb-3 mt-10">Je suis spécialisé dans la création de sites web dynamiques et réactifs, en utilisant des technologies avancées telles que <b>HTML5, CSS3, JavaScript, et PHP</b> ainsi que des outils tels que <b>POSTMAN, TailwindCSS, Squooosh ou Figma.</b> <br> Mon objectif est de fournir des expériences web captivantes qui répondent aux besoins spécifiques des clients, en mettant l'accent sur l'innovation et la créativité technique</p>
+                        <a href="https://www.baroqueclub.ch" class="text-sky-500 inline-flex items-center font-bold">Voir mes projets
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path
+                                    d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3 underline">Projet de Bot et Chatbot</h1>
+                        <p class="leading-relaxed mb-3 mt-10">Mon expertise en automatisation et intelligence artificielle m'a permis de concevoir des bots, des chatbots aux solutions d'automatisation des processus. Ces outils améliorent l'efficacité et l'engagement en offrant des interactions instantanées et personnalisées, démontrant la capacité des technologies AI à transformer les services numériques.</p>
+                        <a href="https://www.club-des-bergers-belges.ch" class="text-sky-500 inline-flex items-center font-bold">Voir mes projets de bot et chatbot
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path
+                                    d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                        
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3 underline">Outils, Technologies et Méthodologies</h1>
+                        <p class="leading-relaxed mb-3 mt-10">J'applique une combinaison d'outils de pointe et de méthodologies Agile et DevOps pour conduire des projets avec efficacité et adaptabilité. Cette approche favorise une culture de développement proactive, centrée sur l'amélioration continue, l'optimisation des workflows, et la réduction du time-to-market tout en assurant une qualité élevée du produit.</p>
+                        <a href="https://www.flowbank.com" class="text-sky-500 inline-flex items-center font-bold">En apprendre plus sur ces outils et les méthodologies
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path
+                                    d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3 underline">Autres Compétences et Projets Liés</h1>
+                        <p class="leading-relaxed mb-3 mt-10">Ma polyvalence s'étend à la gestion de projet, la communication et le leadership, me permettant de diriger des initiatives complexes avec succès. Mes projets variés reflètent ma capacité à apporter des solutions innovantes et à ajouter une valeur significative pour mes clients et leurs utilisateurs, grâce à une gestion efficace et une vision stratégique.</p>
+                        <a href="https://www.infomaniak.com" class="text-sky-500 inline-flex items-center font-bold">Découvrir mes autres projets et compétences
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path
+                                    d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+
+    <!-- Footer -->
+
+
+</body>
+
+</html>

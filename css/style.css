@@ -9,23 +9,53 @@
 
 .background--custom {
     background-color: #FFFFFF;
-    min-height: 100vh; /* Changez `height` en `min-height` */
-    width: 100vw;   
-    position: relative; /* Considérez changer `absolute` en `relative` si applicable */
-    overflow: visible; /* Assurez-vous que le défilement est possible  */
-    overflow-x: hidden; /* Empêche le défilement horizontal */
-    z-index: -2; /* Assurez-vous que le fond est derrière tout le reste */           
+    min-height: 100vh;
+    /* Changez `height` en `min-height` */
+    width: 100vw;
+    position: relative;
+    /* Considérez changer `absolute` en `relative` si applicable */
+    overflow: visible;
+    /* Assurez-vous que le défilement est possible  */
+    overflow-x: hidden;
+    /* Empêche le défilement horizontal */
+    z-index: -2;
+    /* Assurez-vous que le fond est derrière tout le reste */
 }
 
 body {
     box-sizing: border-box;
     font-weight: 400;
     line-height: 1.6;
-    overflow-x: hidden;  /* Empêche le défilement horizontal */
-    overflow-y: visible; /* Permet le défilement vertical */
+    overflow-x: hidden;
+    /* Empêche le défilement horizontal */
+    overflow-y: visible;
+    /* Permet le défilement vertical */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    --sb-track-color: #b5a4cc;
+    --sb-thumb-color: #35322f;
+    --sb-size: 14px;
+}
 
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
 }
 
 

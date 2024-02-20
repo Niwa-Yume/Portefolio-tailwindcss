@@ -55,7 +55,7 @@
     </header>
 
     <!-- Hero section -->
-    <section class="text-white body-font">
+    <section class="text-white body-font mx-9 sm:mx-10">
         <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col md:flex-row">
             <div class="flex flex-col items-center text-center md:items-start md:text-left mb-5 md:mb-0 md:flex-grow">
                 <!-- Conteneur Flex pour le texte et l'emoji -->
@@ -149,7 +149,9 @@
             <a class="main__scroll flex justify-center items-center" href="#section-portefolio">
                 <div class="main__scroll-box">
                     <svg width="100" height="100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9997 13.1716L7.04996 8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z" fill="rgba(28,28,30,1)">
+                        <path
+                            d="M11.9997 13.1716L7.04996 8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
+                            fill="rgba(28,28,30,1)">
                         </path>
                     </svg>
                 </div>
@@ -157,73 +159,158 @@
         </div>
     </section>
 
-
+    <!-- About me section -->
+    <section class="text-white body-font">
+        <div class="flex items-center justify-center min-h-screen bg-indigo-800">
+            <div class="max-w-4xl mx-auto p-5 bg-white shadow-lg rounded-lg flex">
+                <!-- Section Texte -->
+                <div class="w-1/2 px-5">
+                    <h2 class="text-2xl font-semibold text-black mb-10">À propos de moi</h2>
+                    <p class="mt-4 text-black">Je suis un développeur web passionné avec une forte expérience en
+                        création de sites
+                        web et applications web modernes. Je m'efforce constamment d'apprendre de nouvelles technologies
+                        et de meilleures pratiques pour améliorer mes compétences et mes projets.</p>
+                </div>
+                <!-- Section Image -->
+                <div class="w-1/2">
+                    <img src="images/Julien CASTRO.jpg" alt="About Me" class="rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-gray-100 py-10">
+            <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Bloc Toolkit -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Toolkit</h3>
+                    <div class="flex flex-wrap">
+                        <!-- Ajoutez vos icônes ici -->
+                        <div class="w-1/4 p-2">🛠️</div>
+                        <div class="w-1/4 p-2">💻</div>
+                        <!-- Plus d'icônes -->
+                    </div>
+                </div>
+    
+                <!-- Bloc Compétences en Informatique -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Compétences en Informatique</h3>
+                    <div class="flex flex-wrap">
+                        <!-- Ajoutez vos icônes ici -->
+                        <div class="w-1/4 p-2">Python</div>
+                        <div class="w-1/4 p-2">🔒</div>
+                        <!-- Plus d'icônes -->
+                    </div>
+                </div>
+    
+                <!-- Bloc Méthodologies -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Méthodologies</h3>
+                    <div class="flex flex-wrap">
+                        <!-- Ajoutez vos icônes ici -->
+                        <div class="w-1/4 p-2">📊</div>
+                        <div class="w-1/4 p-2">🔄x§</div>
+                        <!-- Plus d'icônes -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- Portfolio section in bentobox design with tailwind css in 4 section 1 about dev web, 1 about bot, 1 about script and automatisation, 1 personal projet-->
     <section id="section-portefolio" class="text-white body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-10">
                 <h1 class="sm:text-3xl text-2xl title-font font-bold mb-4 text-white">Portefolio</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Découvrez mes projets et réalisations, ainsi que comment je vais gérer un projet</p>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Découvrez mes projets et réalisations, ainsi que
+                    comment je vais gérer un projet</p>
             </div>
             <div class="flex flex-wrap -m-4">
                 <div class="p-4 md:w-1/2 w-full">
-                    <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                        
-                        <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3 underline">Projet Développement Web</h1>
-                        <p class="leading-relaxed mb-3 mt-10">Je suis spécialisé dans la création de sites web dynamiques et réactifs, en utilisant des technologies avancées telles que <b>HTML5, CSS3, JavaScript, et PHP</b> ainsi que des outils tels que <b>POSTMAN, TailwindCSS, Squooosh ou Figma.</b> <br> Mon objectif est de fournir des expériences web captivantes qui répondent aux besoins spécifiques des clients, en mettant l'accent sur l'innovation et la créativité technique</p>
-                        <a href="https://www.baroqueclub.ch" class="text-sky-500 inline-flex items-center font-bold">Voir mes projets
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path
-                                    d="M5 12h14M12 5l7 7-7 7"></path>
+                    <div
+                        class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3 underline">Projet
+                            Développement Web</h1>
+                        <p class="leading-relaxed mb-3 mt-10">Je suis spécialisé dans la création de sites web
+                            dynamiques et réactifs, en utilisant des technologies avancées telles que <b>HTML5, CSS3,
+                                JavaScript, et PHP</b> ainsi que des outils tels que <b>POSTMAN, TailwindCSS, Squooosh
+                                ou Figma.</b> <br> Mon objectif est de fournir des expériences web captivantes qui
+                            répondent aux besoins spécifiques des clients, en mettant l'accent sur l'innovation et la
+                            créativité technique</p>
+                        <a href="https://www.baroqueclub.ch"
+                            class="text-sky-500 inline-flex items-center font-bold">Voir mes projets
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
                             </svg>
                         </a>
                     </div>
                 </div>
                 <div class="p-4 md:w-1/2 w-full">
-                    <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                        <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3 underline">Projet de Bot et Chatbot</h1>
-                        <p class="leading-relaxed mb-3 mt-10">Mon expertise en automatisation et intelligence artificielle m'a permis de concevoir des bots, des chatbots aux solutions d'automatisation des processus. Ces outils améliorent l'efficacité et l'engagement en offrant des interactions instantanées et personnalisées, démontrant la capacité des technologies AI à transformer les services numériques.</p>
-                        <a href="https://www.club-des-bergers-belges.ch" class="text-sky-500 inline-flex items-center font-bold">Voir mes projets de bot et chatbot
+                    <div
+                        class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3 underline">Projet de Bot
+                            et Chatbot</h1>
+                        <p class="leading-relaxed mb-3 mt-10">Mon expertise en automatisation et intelligence
+                            artificielle m'a permis de concevoir des bots, des chatbots aux solutions d'automatisation
+                            des processus. Ces outils améliorent l'efficacité et l'engagement en offrant des
+                            interactions instantanées et personnalisées, démontrant la capacité des technologies AI à
+                            transformer les services numériques.</p>
+                        <a href="https://www.club-des-bergers-belges.ch"
+                            class="text-sky-500 inline-flex items-center font-bold">Voir mes projets de bot et chatbot
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path
-                                    d="M5 12h14M12 5l7 7-7 7"></path>
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
                             </svg>
                         </a>
                     </div>
                 </div>
                 <div class="p-4 md:w-1/2 w-full">
-                    <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                        
-                        <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3 underline">Outils, Technologies et Méthodologies</h1>
-                        <p class="leading-relaxed mb-3 mt-10">J'applique une combinaison d'outils de pointe et de méthodologies Agile et DevOps pour conduire des projets avec efficacité et adaptabilité. Cette approche favorise une culture de développement proactive, centrée sur l'amélioration continue, l'optimisation des workflows, et la réduction du time-to-market tout en assurant une qualité élevée du produit.</p>
-                        <a href="https://www.flowbank.com" class="text-sky-500 inline-flex items-center font-bold">En apprendre plus sur ces outils et les méthodologies
+                    <div
+                        class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3 underline">Outils,
+                            Technologies et Méthodologies</h1>
+                        <p class="leading-relaxed mb-3 mt-10">J'applique une combinaison d'outils de pointe et de
+                            méthodologies Agile et DevOps pour conduire des projets avec efficacité et adaptabilité.
+                            Cette approche favorise une culture de développement proactive, centrée sur l'amélioration
+                            continue, l'optimisation des workflows, et la réduction du time-to-market tout en assurant
+                            une qualité élevée du produit.</p>
+                        <a href="https://www.flowbank.com" class="text-sky-500 inline-flex items-center font-bold">En
+                            apprendre plus sur ces outils et les méthodologies
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path
-                                    d="M5 12h14M12 5l7 7-7 7"></path>
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
                             </svg>
                         </a>
                     </div>
                 </div>
 
                 <div class="p-4 md:w-1/2 w-full">
-                    <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                        <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3 underline">Autres Compétences et Projets Liés</h1>
-                        <p class="leading-relaxed mb-3 mt-10">Ma polyvalence s'étend à la gestion de projet, la communication et le leadership, me permettant de diriger des initiatives complexes avec succès. Mes projets variés reflètent ma capacité à apporter des solutions innovantes et à ajouter une valeur significative pour mes clients et leurs utilisateurs, grâce à une gestion efficace et une vision stratégique.</p>
-                        <a href="https://www.infomaniak.com" class="text-sky-500 inline-flex items-center font-bold">Découvrir mes autres projets et compétences
+                    <div
+                        class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3 underline">Autres
+                            Compétences et Projets Liés</h1>
+                        <p class="leading-relaxed mb-3 mt-10">Ma polyvalence s'étend à la gestion de projet, la
+                            communication et le leadership, me permettant de diriger des initiatives complexes avec
+                            succès. Mes projets variés reflètent ma capacité à apporter des solutions innovantes et à
+                            ajouter une valeur significative pour mes clients et leurs utilisateurs, grâce à une gestion
+                            efficace et une vision stratégique.</p>
+                        <a href="https://www.infomaniak.com"
+                            class="text-sky-500 inline-flex items-center font-bold">Découvrir mes autres projets et
+                            compétences
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path
-                                    d="M5 12h14M12 5l7 7-7 7"></path>
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
                             </svg>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    
+
     </section>
 
 
